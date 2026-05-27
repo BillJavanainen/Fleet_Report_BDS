@@ -248,3 +248,8 @@ document.getElementById('cat-sims').innerHTML=`
   </div>
   <div class="cat-stat-label">Total hours</div>
   <div class="cat-stat-val">${fmtI(sTotal)} hrs</div>
+  <div class="bar-track"><div class="bar-fill" style="width:${(sTotal/maxAll*100).toFixed(1)}%;background:${colS}"></div></div>
+  <div class="bar-label"><span>0</span><span>${fmtI(sTotal)}</span></div>`;
+</script>
+</body>
+</html>
