@@ -53,17 +53,17 @@ h1{font-size:26px;font-weight:800;color:#e8f4ff;letter-spacing:-0.5px}
 <div class="kpi-grid">
   <div class="kpi-card"><div class="kpi-accent" style="background:#3b9eca"></div>
     <div class="kpi-label">Total Hours</div>
-    <div class="kpi-value">32,914</div>
+    <div class="kpi-value">32,950</div>
     <div class="kpi-sub">land + water combined</div>
   </div>
   <div class="kpi-card"><div class="kpi-accent" style="background:#0ef0c4"></div>
     <div class="kpi-label">Active Vessels</div>
-    <div class="kpi-value">48</div>
+    <div class="kpi-value">51</div>
     <div class="kpi-sub">in the last 30 days</div>
   </div>
   <div class="kpi-card"><div class="kpi-accent" style="background:#3b9eca"></div>
     <div class="kpi-label">Total Vessels</div>
-    <div class="kpi-value">119</div>
+    <div class="kpi-value">122</div>
     <div class="kpi-sub">all time</div>
   </div>
 </div>
@@ -83,19 +83,19 @@ const CATS = ["USV", "Sim/Test", "Contacts", "UGV", "UAV"];
 // Cols: [Boat_ID, Category, Land_Hrs, Total_On_Water_Hrs, Total_Hrs, Subset]
 const RAW = [
   ["ATLAS","USV",6.505,21.326,27.831,"Other USV"],
-  ["AZAK-1","UGV",30.19,0.0,30.19,""],
-  ["AZAK-2","UGV",1.058,0.0,1.058,""],
+  ["AZAK-1","UGV",30.951,0.0,30.951,""],
+  ["AZAK-2","UGV",2.342,0.0,2.342,""],
   ["FRIENDLY","Contacts",6.214,12.456,18.67,""],
-  ["FULL-RAMPAGE-HIL-1","Sim/Test",52.62,1.312,53.932,""],
+  ["FULL-RAMPAGE-HIL-1","Sim/Test",58.401,1.542,59.943,""],
   ["HAVOC-RAMPAGE-108","USV",24.962,5.169,30.131,"Rampage"],
   ["HAVOC-RAMPAGE-113","USV",1.686,4.717,6.403,"Rampage"],
   ["HAVOC-RAMPAGE-139","USV",6.076,9.154,15.23,"Rampage"],
   ["HAVOC-RAMPAGE-147","USV",27.454,5.802,33.256,"Rampage"],
-  ["HOSTILE","Contacts",4.15,71.904,76.054,""],
+  ["HOSTILE","Contacts",4.159,72.086,76.246,""],
   ["JESSE-1","USV",4.154,10.488,14.642,"Other USV"],
-  ["KAIKOA20-2","USV",72.765,67.392,140.157,"Other USV"],
+  ["KAIKOA20-2","USV",72.847,68.405,141.252,"Other USV"],
   ["MCRIB","USV",20.914,22.317,43.231,"Other USV"],
-  ["MCRIB-2","USV",8.121,13.62,21.74,"Other USV"],
+  ["MCRIB-2","USV",8.39,16.727,25.117,"Other USV"],
   ["PLASTIC-1","USV",90.534,10.591,101.125,"Rampage"],
   ["R100","USV",453.66,194.081,647.741,"Rampage"],
   ["R101","USV",243.911,106.231,350.142,"Rampage"],
@@ -110,7 +110,7 @@ const RAW = [
   ["R11","USV",148.061,7.909,155.971,"Rampage"],
   ["R110","USV",496.796,144.746,641.542,"Rampage"],
   ["R111","USV",372.818,106.152,478.97,"Rampage"],
-  ["R112","USV",674.9,256.708,931.608,"Rampage"],
+  ["R112","USV",676.283,259.204,935.488,"Rampage"],
   ["R113","USV",887.935,229.524,1117.458,"Rampage"],
   ["R114","USV",685.866,562.482,1248.348,"Rampage"],
   ["R115","USV",452.785,158.341,611.125,"Rampage"],
@@ -120,10 +120,10 @@ const RAW = [
   ["R119","USV",475.584,153.895,629.479,"Rampage"],
   ["R12","USV",42.119,0.0,42.119,"Rampage"],
   ["R120","USV",501.461,94.604,596.066,"Rampage"],
-  ["R121","USV",440.846,207.953,648.799,"Rampage"],
-  ["R122","USV",529.305,471.822,1001.127,"Rampage"],
+  ["R121","USV",441.652,210.374,652.027,"Rampage"],
+  ["R122","USV",530.336,474.561,1004.897,"Rampage"],
   ["R123","USV",205.921,119.838,325.759,"Rampage"],
-  ["R124","USV",659.496,148.273,807.768,"Rampage"],
+  ["R124","USV",660.69,150.947,811.638,"Rampage"],
   ["R125","USV",223.781,105.422,329.202,"Rampage"],
   ["R126","USV",53.725,19.745,73.47,"Rampage"],
   ["R127","USV",62.112,73.292,135.404,"Rampage"],
@@ -138,16 +138,16 @@ const RAW = [
   ["R135","USV",383.104,86.983,470.086,"Rampage"],
   ["R136","USV",365.762,172.264,538.026,"Rampage"],
   ["R137","USV",109.63,66.437,176.067,"Rampage"],
-  ["R138","USV",220.28,131.057,351.337,"Rampage"],
+  ["R138","USV",220.396,131.057,351.453,"Rampage"],
   ["R139","USV",273.314,146.944,420.258,"Rampage"],
   ["R14","USV",1.451,16.161,17.612,"Rampage"],
   ["R140","USV",297.725,40.89,338.615,"Rampage"],
   ["R141","USV",63.673,7.393,71.066,"Rampage"],
   ["R142","USV",93.368,8.513,101.881,"Rampage"],
-  ["R143","USV",121.948,64.275,186.223,"Rampage"],
-  ["R144","USV",348.706,13.513,362.219,"Rampage"],
+  ["R143","USV",123.939,64.275,188.214,"Rampage"],
+  ["R144","USV",351.06,13.513,364.573,"Rampage"],
   ["R145","USV",141.343,36.021,177.364,"Rampage"],
-  ["R146","USV",119.061,38.862,157.923,"Rampage"],
+  ["R146","USV",121.854,38.862,160.716,"Rampage"],
   ["R147","USV",147.438,53.685,201.122,"Rampage"],
   ["R148","USV",5.579,1.067,6.645,"Rampage"],
   ["R149","USV",33.286,2.304,35.59,"Rampage"],
@@ -161,6 +161,7 @@ const RAW = [
   ["R158","USV",9.225,1.037,10.262,"Rampage"],
   ["R159","USV",7.493,0.972,8.464,"Rampage"],
   ["R160","USV",9.468,0.943,10.411,"Rampage"],
+  ["R161","USV",0.042,0.0,0.042,"Rampage"],
   ["R162","USV",5.336,1.204,6.539,"Rampage"],
   ["R163","USV",5.641,1.979,7.621,"Rampage"],
   ["R18","USV",0.097,0.0,0.097,"Rampage"],
@@ -172,6 +173,8 @@ const RAW = [
   ["R204","USV",38.584,7.653,46.237,"Rampage"],
   ["R21","USV",0.115,0.0,0.115,"Rampage"],
   ["R22","USV",0.037,0.0,0.037,"Rampage"],
+  ["R222","USV",0.006,0.0,0.006,"Rampage"],
+  ["R223","USV",0.068,0.0,0.068,"Rampage"],
   ["R23","USV",24.692,0.0,24.692,"Rampage"],
   ["R24","USV",2.533,0.0,2.533,"Rampage"],
   ["R244","USV",0.0,0.0,0.0,"Rampage"],
@@ -193,7 +196,7 @@ const RAW = [
   ["R40","USV",15.769,0.036,15.804,"Rampage"],
   ["R41","USV",20.142,2.644,22.786,"Rampage"],
   ["R42","USV",19.359,6.359,25.718,"Rampage"],
-  ["SALVAGER","USV",0.367,16.684,17.051,"Other USV"],
+  ["SALVAGER","USV",0.561,17.51,18.071,"Other USV"],
   ["SB-36","Contacts",1.365,9.723,11.088,""],
   ["SB36","Contacts",0.973,26.781,27.754,""],
   ["SEAHOUND-1","Contacts",0.0,0.041,0.041,""],
